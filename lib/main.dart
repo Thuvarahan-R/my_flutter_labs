@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'lab2_login.dart'; // Change to the screen you want to test
-// import 'lab3_recipe_page.dart';
-// import 'week2.dart'; // Only use one as home
+import 'lab3_recipe_page.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lab Demo',
+      title: 'Lab 3 Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Lab2LoginPage(), // You can change this to other pages
+      home: const Lab3RecipePage(),
     );
   }
 }
