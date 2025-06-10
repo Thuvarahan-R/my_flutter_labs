@@ -28,10 +28,10 @@ class Lab3RecipePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
-                RecipeImage(label: 'Beef', path: 'images/beef.jpg'),
-                RecipeImage(label: 'Chicken', path: 'images/chicken.jpg'),
-                RecipeImage(label: 'Pork', path: 'images/pork.jpg'),
-                RecipeImage(label: 'Seafood', path: 'images/seafood.jpg'),
+                RecipeImage(label: 'Beef', path: 'images/Beef.jpg'),
+                RecipeImage(label: 'Chicken', path: 'images/Chicken.jpg'),
+                RecipeImage(label: 'Pork', path: 'images/Pork.jpg'),
+                RecipeImage(label: 'Seafood', path: 'images/Seafood.jpg'),
               ],
             ),
 
@@ -41,10 +41,10 @@ class Lab3RecipePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
-                RecipeImage(label: 'Main Dishes', path: 'images/main_dishes.jpg', alignBottom: true),
-                RecipeImage(label: 'Salad Recipes', path: 'images/salad.jpg', alignBottom: true),
-                RecipeImage(label: 'Side Dishes', path: 'images/side_dishes.jpg', alignBottom: true),
-                RecipeImage(label: 'Crockpot', path: 'images/crockpot.jpg', alignBottom: true),
+                RecipeImage(label: 'Main Dishes', path: 'images/Main_Dishes.jpg', alignBottom: true),
+                RecipeImage(label: 'Salad Recipes', path: 'images/Salad.jpg', alignBottom: true),
+                RecipeImage(label: 'Side Dishes', path: 'images/Side_Dishes.jpg', alignBottom: true),
+                RecipeImage(label: 'Crockpot', path: 'images/Crockpot.jpg', alignBottom: true),
               ],
             ),
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'lab3_recipe_page.dart';
-
-
+import 'lab5_login.dart';
+import 'lab5_profile_page.dart';
+import 'data_repository.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,13 +13,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lab 3 Demo',
+      title: 'Lab 5 Demo',
       debugShowCheckedModeBanner: false,
+
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const Lab5LoginPage(),
+        '/profile': (context) => const Lab5ProfilePage(),
+        // THIS LINE IS REQUIRED
+      },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Lab3RecipePage(),
     );
   }
 }
