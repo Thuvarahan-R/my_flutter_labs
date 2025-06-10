@@ -3,7 +3,9 @@ import 'lab5_login.dart';
 import 'lab5_profile_page.dart';
 import 'data_repository.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await DataRepository.loadData();
   runApp(const MyApp());
 }
 
@@ -15,12 +17,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Lab 5 Demo',
       debugShowCheckedModeBanner: false,
-
       initialRoute: '/',
       routes: {
         '/': (context) => const Lab5LoginPage(),
         '/profile': (context) => const Lab5ProfilePage(),
-        // THIS LINE IS REQUIRED
       },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
